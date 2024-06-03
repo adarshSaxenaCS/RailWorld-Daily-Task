@@ -1,0 +1,13 @@
+//TernaryOperator: It can be used to replace the if else statement in certain situations 
+//NestedTernaryOperator: It is possible to use one ternary operator inside another ternary operator.
+
+//Example
+public class NestedTernaryOperator {
+    public static void main(String args[])
+    {
+        int n1=2,n2=9,n3=-11;
+        int largest=(n1>=n2)?((n1>=n3)?n1:n3):((n2>=n3)?n2:n3);
+        System.out.println("Largest Number:"+largest);
+    }
+}
+

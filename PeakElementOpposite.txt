@@ -1,0 +1,38 @@
+//Peak Element Opposite Task
+import java.util.Scanner;
+
+public class PeakElementOpposite {
+    public static void main(String[] args) {
+        int a[]=new int[]{31,19,5,9};
+        for(int i=1;i<a.length;i++){
+            if(a[i]<a[i-1] && a[i]<a[i+1]){
+                System.out.println(a[i]);
+                break;
+            }
+        }
+    }
+}
+
+
+
+
+//Peak Element
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n]; //declaring an array
+        for (int i=0;i<a.length;i++) // initializing
+        {
+            a[i]=sc.nextInt();
+        }
+        for (int i = 1; i < a.length-1; i++) {
+            if(a[i]>a[i-1] && a[i]>a[i+1] ){
+                System.out.println(a[i]);
+                break;
+            }
+        }
+
+    }
+}

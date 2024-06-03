@@ -1,0 +1,39 @@
+import Model.Address;
+import Model.Employee;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+    Employee employee=new Employee();
+    Scanner sc =new Scanner(System.in);
+    employee.setName(sc.nextLine());
+    employee.setAddress(new Address("2"," Main Street","New York","10001"));
+       System.out.println(employee.toString());
+       // System.out.println(employee.getName());
+    }
+}
+
+
+
+
+
+
+//import Model.Address;
+//import Model.Employee;
+
+//import java.util.Scanner;
+
+//public class Main {
+  //  public static void main(String[] args) {
+   // Employee emp=new Employee("John Deo");
+    //Address address =new Address("123 Main Street","New York","NY","10001");
+       //  System.out.println("Employee Name: "+emp.getName());
+       // System.out.println("Address: "+address.getStreetNo()+" "+address.getCity()+" "+address.getState());
+       // System.out.println("Street No: "+address.getStreetNo());
+       // System.out.println("City: "+address.getCity());
+       // System.out.println("State: "+address.getState());
+       // System.out.println("Pin: "+address.getPin());
+
+
+   // }
+//}

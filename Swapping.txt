@@ -1,0 +1,16 @@
+public class swapping {
+    public static void main(String args[]) {
+
+        int e = 10;
+        int f = 5;
+        e = e ^ f;
+        f = e ^ f;
+        e = e ^ f;
+        System.out.println("value of e is "+e);
+        System.out.println("value of f is "+f);
+
+    }
+}
+
+
+

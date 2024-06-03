@@ -1,0 +1,43 @@
+public class secondLargest {
+    public static void main(String args[])
+    {
+        int []arr=new int[]{2,3,6,1,0};
+        int secondLargest;
+        int max=arr[0];
+        int min=arr[0];
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]>max)
+            {
+                max=arr[i];
+            }
+            if(arr[i]<min)
+            {
+                min=arr[i];
+            }
+
+        }
+        if(min==max) System.out.println("All are same,cannot bbe determined");
+        else {
+            secondLargest=min;
+            for (int i=0;i<arr.length;i++)
+            {
+                if(arr[i]>secondLargest && arr[i]!=max)
+                {
+                    secondLargest=arr[i];
+                }
+            }
+            if(secondLargest==min)
+            {
+                System.out.println("There is no second largest element");
+            }
+            else
+            {
+                System.out.println("Second largest: " + secondLargest);
+            }
+
+        }
+
+    }
+}
+
